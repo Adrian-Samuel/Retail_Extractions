@@ -20,15 +20,11 @@ const instance = axios.create({
         while (next) {
             let request = await instance.get(`Image.json?&offset=${offset}`)
 
-
             let response = request.data;
-
 
             if (response.hasOwnProperty('Image')) {
                 results.push(...response.Image);
                 offset += 100;
-
-
 
             } else {
                 next = false;
