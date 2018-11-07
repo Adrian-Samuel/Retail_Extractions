@@ -1,6 +1,9 @@
 const axios = require('axios');
 const download = require('image-downloader');
 
+const accountID = insertNumber; // Insert your accountID here
+const folderLocation  = 'Specify File Directory';  // e.g. /Users/Name/Documents/RetailImages
+
 const instance = axios.create({
     baseURL: 'https://api.lightspeedapp.com/API/Account/{{accountID}}/',
     timeout: 30000,
@@ -36,7 +39,7 @@ const instance = axios.create({
 
             const options = {
                 url: `${imageURL}`,
-                dest: 'Specify File Directory' // e.g. /Users/Name/Documents/RetailImages
+                dest: folderLocation
             }
 
             const {
