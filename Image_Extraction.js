@@ -58,7 +58,7 @@ const instance = axios.create({
             let imageURL = picture.baseImageURL + picture.publicID;
 
             const options = {
-                url: `${imageURL}`,
+                url: `${imageURL}.png`,
                 dest: folderLocation
             }
 
