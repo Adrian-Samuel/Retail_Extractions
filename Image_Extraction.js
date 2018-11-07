@@ -1,3 +1,23 @@
+/* 
+A Node.js script to extract images from the system
+
+To use:
+
+1) Install Node (https://nodejs.org/en/download/)
+2) Install Axios (https://github.com/axios/axios)
+3) Install Image-Downloader (https://www.npmjs.com/package/image-downloader)
+
+4) Specify accountID variable 
+5) Specify fileLocation variable
+
+Register and authenticate your client to get your access token:
+https://developers.lightspeedhq.com/retail/authentication/authentication-overview/
+
+
+*/
+
+
+
 const axios = require('axios');
 const download = require('image-downloader');
 
